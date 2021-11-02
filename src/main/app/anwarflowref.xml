@@ -24,5 +24,6 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
     <flow name="AnwarPrivateFlow">
         <set-payload value="#[&quot;This is Called Private Flow&quot;]" doc:name="Set Payload"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+<logger message="#[Passing Set payload value]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
